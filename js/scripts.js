@@ -17,7 +17,7 @@ $(document).ready(function() {
       });
     }
 
-    else if ((graduationInt < 2000) || (graduationInt % 3 === 0))  {
+    else if ((graduationInt < 1980) || (graduationInt % 3 === 0))  {
       $("#python").hide();
       $("#ruby").hide();
       $("#rust").hide();
