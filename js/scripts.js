@@ -5,26 +5,25 @@ $(document).ready(function() {
     const favNumInt = parseInt($("input#favNum").val());
     const graduationInt = parseInt($("input#graduation").val());
   
-    // ((oneInt === twoInt) && (twoInt === threeInt) && (oneInt === threeInt))
 
-    if ((oneInt + twoInt <= threeInt) || (twoInt + threeInt <= oneInt) || (threeInt + oneInt <= twoInt)) {
-      $("#nonTriangle").show();
+    if ( ageInt < 25) {
+      $("#python").show();
     }
 
     else if ((oneInt === twoInt) && (twoInt === threeInt) && (oneInt === threeInt)) {
-      $("#equilateral").show();
+      $("#rust").show();
     }
     
     else if ((oneInt === twoInt) || (twoInt === threeInt) || (oneInt === threeInt)) {
-      $("#isosceles").show();
+      $("#go").show();
     }
 
     else if ((oneInt !== twoInt) && (twoInt !== threeInt) && (oneInt !== threeInt)) {
-      $("#scalene").show(); 
+      $("#ruby").show(); 
     }
       
     else {
-      $('#nonTriangle').show();
+      $('#ruby').show();
     }
   });
 });
