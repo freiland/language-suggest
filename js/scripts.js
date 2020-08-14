@@ -5,7 +5,7 @@ $(document).ready(function() {
     const favNumInt = parseInt($("input#favNum").val());
     const graduationInt = parseInt($("input#graduation").val());
     const compSizeInt = parseInt($("#compSize").val());
-    //const workLocInt = parseInt($("#workLoc").val());
+    const workLocInt = parseInt($("#workLoc").val());
   
 
     if (( ageInt < 25) && (compSizeInt === 1)) {
@@ -13,6 +13,20 @@ $(document).ready(function() {
       $("#rust").hide();
       $('#ruby').hide();
       $("#python").show();
+    }
+
+    else if ((workLocInt === 0) && (graduationInt < 2015))  {
+      $("#python").hide();
+      $("#ruby").hide();
+      $("#rust").hide();
+      $("#go").show();
+    }
+
+    else if ((favNumInt >= 33) && (graduationInt > 2010))  {
+      $("#python").hide();
+      $("#ruby").hide();
+      $("#go").hide();
+      $("#rust").show();
     }
 
     else if ((favNumInt >= 33) && (graduationInt > 2010))  {

@@ -22,5 +22,9 @@ h1 {
 
 .jumbotron {
   background-color: rgb(255, 215, 112);
+  text-align: center;
 }
 
+.answer {
+  padding: 45px;
+}
