@@ -8,28 +8,28 @@ $(document).ready(function() {
     const workLocInt = parseInt($("#workLoc").val());
   
 
-    if (( ageInt < 25) && (favNumInt > 10)) {
+    if (( ageInt % 2 === 0) || (favNumInt % 5 === 0)) {
       $("#go").hide();
       $("#rust").hide();
       $('#ruby').hide();
       $("#python").show();
     }
 
-    else if ((workLocInt === 0) && (graduationInt < 2015))  {
+    else if ((graduationInt < 2005) || (graduationInt % 2 ===0))  {
       $("#python").hide();
       $("#ruby").hide();
       $("#rust").hide();
       $("#go").show();
     }
 
-    else if ((ageInt >= 40) && (workLocInt === 0))  {
+    else if (workLocInt === 0)  {
       $("#python").hide();
       $("#ruby").hide();
       $("#go").hide();
       $("#rust").show();
     }
 
-    else if ((workLocInt === 1) || (favNumInt > 100) && (ageInt > 20))  {
+    else if (compSizeInt === 1)  {
       $("#python").hide();
       $("#ruby").hide();
       $("#rust").hide();
