@@ -8,7 +8,7 @@ $(document).ready(function() {
     const workLocInt = parseInt($("#workLoc").val());
   
 
-    if (( ageInt % 2 === 0) || (favNumInt % 5 === 0)) {
+    if (( ageInt % 2 === 0) || (favNumInt % 7 === 0)) {
       $("#go").hide();
       $("#rust").hide();
       $('#ruby').hide();
@@ -17,7 +17,7 @@ $(document).ready(function() {
       });
     }
 
-    else if ((graduationInt < 2005) || (graduationInt % 2 ===0))  {
+    else if ((graduationInt < 2000) || (graduationInt % 3 === 0))  {
       $("#python").hide();
       $("#ruby").hide();
       $("#rust").hide();
@@ -26,7 +26,7 @@ $(document).ready(function() {
       });
     }
 
-    else if (workLocInt === 0)  {
+    else if (workLocInt === 1)  {
       $("#python").hide();
       $("#ruby").hide();
       $("#go").hide();
