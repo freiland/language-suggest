@@ -4,11 +4,11 @@ $(document).ready(function() {
     const ageInt = parseInt($("input#age").val());
     const favNumInt = parseInt($("input#favNum").val());
     const graduationInt = parseInt($("input#graduation").val());
-    const compSizeVal = $("input#compSize").val());
-    const workLocVal = $("input#workLoc").val());
+    const compSizeInt = parseInt($("#compSize").val());
+    //const workLocInt = parseInt($("#workLoc").val());
   
 
-    if ( ageInt < 25) {
+    if (( ageInt < 25) && (compSizeInt === 1)) {
       $("#python").hide();
       $("#rust").hide();
       $('#ruby').hide();
@@ -22,7 +22,7 @@ $(document).ready(function() {
       $("#rust").show();
     }
 
-    else if ()
+    
     
     //else if ((oneInt === twoInt) || (twoInt === threeInt) || (oneInt === threeInt)) {
       //$("#go").show();
