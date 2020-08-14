@@ -10,17 +10,17 @@ $(document).ready(function() {
       $("#python").show();
     }
 
-    else if ((oneInt === twoInt) && (twoInt === threeInt) && (oneInt === threeInt)) {
+    else if ((favNum >= 33) && (graduation > 2010))  {
       $("#rust").show();
     }
     
-    else if ((oneInt === twoInt) || (twoInt === threeInt) || (oneInt === threeInt)) {
-      $("#go").show();
-    }
+    //else if ((oneInt === twoInt) || (twoInt === threeInt) || (oneInt === threeInt)) {
+      //$("#go").show();
+    //}
 
-    else if ((oneInt !== twoInt) && (twoInt !== threeInt) && (oneInt !== threeInt)) {
-      $("#ruby").show(); 
-    }
+    //else if ((oneInt !== twoInt) && (twoInt !== threeInt) && (oneInt !== threeInt)) {
+      //$("#ruby").show(); 
+    //}
       
     else {
       $('#ruby').show();

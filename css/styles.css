@@ -1,0 +1,21 @@
+
+#python {
+  display: none;
+}
+
+#rust {
+  display: none;
+}
+
+#go {
+  display: none;
+}
+
+#ruby {
+  display: none;
+}
+
+h1 {
+  font-style: italic;
+  color: darkblue;
+}
