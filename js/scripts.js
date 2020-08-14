@@ -7,10 +7,14 @@ $(document).ready(function() {
   
 
     if ( ageInt < 25) {
+      $("#python").hide();
+      $("#rust").hide();
+      $('#ruby').hide();
       $("#python").show();
     }
 
     else if ((favNumInt >= 33) && (graduationInt > 2010))  {
+      $("#rust").removeClass();
       $("#rust").show();
     }
     
@@ -23,6 +27,7 @@ $(document).ready(function() {
     //}
       
     else {
+      $('#ruby').removeClass();
       $('#ruby').show();
     }
   });
