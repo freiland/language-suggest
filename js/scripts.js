@@ -10,7 +10,7 @@ $(document).ready(function() {
       $("#python").show();
     }
 
-    else if ((favNum >= 33) && (graduation > 2010))  {
+    else if ((favNumInt >= 33) && (graduationInt > 2010))  {
       $("#rust").show();
     }
     

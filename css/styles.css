@@ -19,3 +19,7 @@ h1 {
   font-style: italic;
   color: darkblue;
 }
+
+.jumbotron {
+  background-color: rgb(255, 215, 112);
+}
