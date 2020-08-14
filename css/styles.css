@@ -26,5 +26,10 @@ h1 {
 }
 
 .answer {
-  padding: 45px;
+  padding: 55px;
+}
+
+h2 {
+  padding: 35px;
+  font-size: x-large;
 }
