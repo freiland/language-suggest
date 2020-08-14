@@ -12,35 +12,45 @@ $(document).ready(function() {
       $("#go").hide();
       $("#rust").hide();
       $('#ruby').hide();
-      $("#python").show();
+      $("#python").fadeIn(2000, function() {
+        
+      });
     }
 
     else if ((graduationInt < 2005) || (graduationInt % 2 ===0))  {
       $("#python").hide();
       $("#ruby").hide();
       $("#rust").hide();
-      $("#go").show();
+      $("#go").fadeIn(2000, function() {
+        
+      });
     }
 
     else if (workLocInt === 0)  {
       $("#python").hide();
       $("#ruby").hide();
       $("#go").hide();
-      $("#rust").show();
+      $("#rust").fadeIn(2000, function() {
+        
+      });
     }
 
     else if (compSizeInt === 1)  {
       $("#python").hide();
       $("#ruby").hide();
       $("#rust").hide();
-      $("#go").show();
+      $("#go").fadeIn(2000, function() {
+        
+      });
     }
 
     else {
       $("#python").hide();
       $("#rust").hide();
       $("#go").hide();
-      $('#ruby').show();
+      $('#ruby').fadeIn(2000, function() {
+        
+      });
     }
   });
 });
