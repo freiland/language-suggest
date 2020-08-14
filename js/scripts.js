@@ -8,8 +8,8 @@ $(document).ready(function() {
     const workLocInt = parseInt($("#workLoc").val());
   
 
-    if (( ageInt < 25) && (compSizeInt === 1)) {
-      $("#python").hide();
+    if (( ageInt < 25) && (favNumInt > 10)) {
+      $("#go").hide();
       $("#rust").hide();
       $('#ruby').hide();
       $("#python").show();
@@ -22,30 +22,20 @@ $(document).ready(function() {
       $("#go").show();
     }
 
-    else if ((favNumInt >= 33) && (graduationInt > 2010))  {
+    else if ((ageInt >= 40) && (workLocInt === 0))  {
       $("#python").hide();
       $("#ruby").hide();
       $("#go").hide();
       $("#rust").show();
     }
 
-    else if ((favNumInt >= 33) && (graduationInt > 2010))  {
+    else if ((workLocInt === 1) || (favNumInt > 100) && (ageInt > 20))  {
       $("#python").hide();
       $("#ruby").hide();
-      $("#go").hide();
-      $("#rust").show();
+      $("#rust").hide();
+      $("#go").show();
     }
 
-    
-    
-    //else if ((oneInt === twoInt) || (twoInt === threeInt) || (oneInt === threeInt)) {
-      //$("#go").show();
-    //}
-
-    //else if ((oneInt !== twoInt) && (twoInt !== threeInt) && (oneInt !== threeInt)) {
-      //$("#ruby").show(); 
-    //}
-      
     else {
       $("#python").hide();
       $("#rust").hide();
