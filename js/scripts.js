@@ -8,7 +8,7 @@ $(document).ready(function() {
     const workLocInt = parseInt($("#workLoc").val());
   
 
-    if (( ageInt % 2 === 0) || (favNumInt % 7 === 0)) {
+    if (( ageInt % 3 === 0) || (favNumInt % 7 === 0)) {
       $("#go").hide();
       $("#rust").hide();
       $('#ruby').hide();
